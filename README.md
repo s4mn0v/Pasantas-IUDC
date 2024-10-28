@@ -11,7 +11,7 @@
 - - default.vue (Mostrara el login sin slot si el usuario no esta logeado)
 - - logged.vue (Este es una referenca a los menus de navegacion dependiendo del rol de usuario)
 - middleware:
-- - auth.global.ts
+- - auth.global.ts (Crear porque esta eliminada)
 - pages:
 - - admin:
 - - - dashboard.vue
