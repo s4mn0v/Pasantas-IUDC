@@ -7,3 +7,4 @@ const layout = "default";
     <NuxtPage />
   </NuxtLayout>
 </template>
+  
