@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const layout = "default";
+const layout = "logged";
 </script>
 
 <template>
