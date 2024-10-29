@@ -1,0 +1,4 @@
+<template>
+    <EmpresaNav />
+    <slot />
+</template>
