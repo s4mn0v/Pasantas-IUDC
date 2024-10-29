@@ -1,75 +1,28 @@
-# Nuxt Minimal Starter
+# Folder Structure
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
-## Setup
-
-Make sure to install dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+- componentes:
+- - AdminNav.vue
+- - EmpresaNav.vue
+- composables:
+- - useAuthOperations.ts
+- - useFirestoreOperations.ts
+- layouts:
+- - default.vue (Mostrara el login sin slot si el usuario no esta logeado)
+- - logged.vue (Este es una referenca a los menus de navegacion dependiendo del rol de usuario)
+- middleware:
+- - auth.global.ts (Crear porque esta eliminada)
+- pages:
+- - admin:
+- - - dashboard.vue
+- - - empresas.vue
+- - - pasantes.vue
+- - - reportes.vue
+- - empresa:
+- - - dashboard.vue
+- - - pasantes.vue
+- - - reportes.vue
+- - index.vue
+- app.vue
+- error.vue
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
