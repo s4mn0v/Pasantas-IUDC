@@ -1,3 +1,3 @@
 <template>
-  <h1>Reportes</h1>
+  <FormReportes />
 </template>
