@@ -15,6 +15,7 @@
             placeholder="Search for company"
           />
         </div>
+        
         <div class="overflow-hidden w-full">
           <table class="min-w-full table-auto rounded-xl">
             <thead>
