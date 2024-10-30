@@ -1,7 +1,3 @@
 <template>
-  <div>
-    <PasantesCarrusel />
-    <ReportesTableAdmin />
-  </div>
-
+  <ReportesTableAdmin />
 </template>

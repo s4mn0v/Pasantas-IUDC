@@ -4,9 +4,12 @@ const layout = "logged";
 
 <template>
   <!-- Nuxt Loader for suspense -->
-  <NuxtLoadingIndicator />
-  <NuxtLayout :name="layout">
-    <NuxtPage />
-  </NuxtLayout>
+  <NuxtLoadingIndicator color="red" />
+  <Suspense>
+    <NuxtLayout :name="layout">
+      <div class="bg-gray-100 h-screen w-screen p-5">
+        <NuxtPage />
+      </div>
+    </NuxtLayout>
+  </Suspense>
 </template>
-  
