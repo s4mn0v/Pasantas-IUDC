@@ -2,9 +2,18 @@
   <div class="mt-4">
     <!-- Barra de búsqueda -->
     <div class="mb-4 max-w-lg overflow-hidden drop-shadow-md">
-      <input type="text" v-model="searchQuery" placeholder="Buscar pasante por nombre..."
-        class="w-full py-3 px-4 rounded-lg outline-none" />
-    </div>
+          <div
+            class="absolute inset-y-0 left-1 flex items-center pl-3 pointer-events-none"
+          >
+            <Icon name="uil:search" class="w-5 h-5" />
+          </div>
+          <input
+            type="text"
+            v-model="searchQuery"
+            class="block w-full sm:w-80 h-11 pr-5 pl-12 py-2.5 text-base font-normal shadow-xs text-gray-900 border border-gray-300 rounded-full placeholder-gray-400 focus:outline-none"
+            placeholder="Buscar pasante"
+          />
+        </div>
 
     <!-- Carrusel de pasantes en una sola columna con datos al lado de la foto -->
     <div class="overflow-y-auto flex flex-col gap-4 h-96 pb-4 scrollbar-hide">

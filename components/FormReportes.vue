@@ -1,6 +1,7 @@
 <template>
   <div class="flex items-center justify-center p-12">
-    <div class="mx-auto w-full max-w-[550px]">
+    <div class="mx-auto w-full max-w-[550px] bg-white p-4 rounded-lg shadow-md items-center space-x-4">
+      <h1 class="uppercase text-center mb-6 text-xl tracking-widest font-bold">Reportes</h1>
       <form>
         <!-- Búsqueda por cédula -->
         <div class="mb-5">
@@ -13,11 +14,11 @@
 
         <!-- Clasificación -->
         <div class="mb-5">
-          <label for="classification" class="mb-3 block text-base font-medium text-[#07074D]">
+          <label for="classification" class="mb-3 block text-base font-medium">
             Clasificación
           </label>
           <select name="classification" id="classification"
-            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md">
+            class="w-full rounded-md border border-gray-200 bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md">
             <option value="" disabled selected>Seleccione una opción</option>
             <option value="verde" class="bg-green-200 uppercase">Verde</option>
             <option value="amarillo" class="bg-yellow-200 uppercase">Amarillo</option>
@@ -27,21 +28,22 @@
 
         <!-- Comentarios -->
         <div class="mb-5">
-          <label for="comments" class="mb-3 block text-base font-medium text-[#07074D]">
+          <label for="comments" class="mb-3 block text-base font-medium">
             Comentarios
           </label>
           <textarea name="comments" id="comments" rows="4" placeholder="Escribe comentarios aquí..."
-            class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
+            class="w-full rounded-md border border-gray-200 bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"
             maxlength="450"></textarea>
         </div>
 
         <!-- Botón de envío -->
         <div>
-          <button
-            class="hover:shadow-form rounded-md bg-[#6A64F1] py-3 px-8 text-center text-base font-semibold text-white outline-none">
-            Enviar
-          </button>
-        </div>
+    <button
+        class="flex items-center justify-center px-6 py-2 text-base text-white font-semibold rounded-full border border-purple-200 bg-purple-700 hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 transition-all duration-300">
+        <Icon name="uil:envelope-send" class="w-6 h-6 mr-2" />
+        Enviar
+    </button>
+</div>
       </form>
     </div>
   </div>
