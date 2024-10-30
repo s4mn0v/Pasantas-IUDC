@@ -12,7 +12,7 @@
             type="text"
             id="default-search"
             class="block w-80 h-11 pr-5 pl-12 py-2.5 text-base font-normal shadow-xs text-gray-900 bg-transparent border border-gray-300 rounded-full placeholder-gray-400 focus:outline-none"
-            placeholder="Search for company"
+            placeholder="Buscar reporte"
           />
         </div>
         
