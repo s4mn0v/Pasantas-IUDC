@@ -1,3 +1,5 @@
 <template>
-  <PasantesCarruselAdmin />
+  <NuxtLayout name="logged">
+    <PasantesAdmin />
+  </NuxtLayout>
 </template>

@@ -16,7 +16,7 @@
         </div>
 
     <!-- Carrusel de pasantes en una sola columna con datos al lado de la foto -->
-    <div class="overflow-y-auto flex flex-col gap-4 h-96 pb-4 scrollbar-hide">
+    <div class="overflow-y-auto flex flex-col gap-4 h-screen pb-4 scrollbar-hide">
       <div v-for="pasante in filteredPasantes" :key="pasante.id"
         class="flex w-full bg-white p-4 rounded-lg shadow-md items-center space-x-4">
         <img class="h-24 w-24 rounded-full" src="https://tailwindcss.com/img/erin-lindford.jpg" alt="Pasante's Face" />
@@ -39,7 +39,7 @@
               <Icon name="uil:whatsapp" class="w-5 h-5" />
             </a>
             <!-- Botón de Reportes -->
-            <a class="flex items-center justify-center px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2" target="_blank">
+            <a class="flex items-center justify-center px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2" target="_blank" href="./reportes">
               <Icon name="uil:file-plus-alt" class="w-5 h-5" />
             </a>
           </div>

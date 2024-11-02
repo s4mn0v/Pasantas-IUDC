@@ -1,3 +1,5 @@
 <template>
-  <h1>Reportes</h1>
+  <NuxtLayout name="logged">
+    <ReportesTableAdmin />
+  </NuxtLayout>
 </template>

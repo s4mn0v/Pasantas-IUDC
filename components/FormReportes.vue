@@ -38,12 +38,12 @@
 
         <!-- Botón de envío -->
         <div>
-    <button
-        class="flex items-center justify-center px-6 py-2 text-base text-white font-semibold rounded-full border border-purple-200 bg-purple-700 hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 transition-all duration-300">
-        <Icon name="uil:envelope-send" class="w-6 h-6 mr-2" />
-        Enviar
-    </button>
-</div>
+          <button
+            class="flex items-center justify-center px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 transition-all duration-300">
+            <Icon name="uil:envelope-send" class="w-5 h-5 mr-1" />
+            Enviar
+          </button>
+        </div>
       </form>
     </div>
   </div>

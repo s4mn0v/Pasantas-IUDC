@@ -1,3 +1,5 @@
 <template>
-  <h1>Empresas</h1>
+  <NuxtLayout name="logged">
+    <ListEmpresasAdmin />
+  </NuxtLayout>
 </template>

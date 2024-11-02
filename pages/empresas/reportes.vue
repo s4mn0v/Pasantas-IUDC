@@ -1,3 +1,5 @@
 <template>
-  <FormReportes />
+  <NuxtLayout name="logged">
+    <FormReportes />
+  </NuxtLayout>
 </template>

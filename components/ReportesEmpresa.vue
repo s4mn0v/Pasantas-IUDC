@@ -1,14 +1,23 @@
 <template>
   <div class="flex flex-col">
     <div class="overflow-x-auto">
-      <div class="inline-block min-w-full align-middle sm:m-8 m-4">
-        <div class="relative text-gray-500 focus-within:text-gray-900 mb-4">
-          <div class="absolute inset-y-0 left-1 flex items-center pl-3 pointer-events-none">
-            <Icon name="uil:search" class="w-5 h-5" />
+      <div class="inline-block min-w-full align-middle m-4">
+        <div class="flex items-center space-x-2 mb-4 max-w-lg drop-shadow-md">
+          <!-- Contenedor del Buscador -->
+          <div class="relative w-full sm:w-80">
+            <div class="absolute inset-y-0 left-1 flex items-center pl-3 pointer-events-none">
+              <Icon name="uil:search" class="w-5 h-5 text-gray-500" />
+            </div>
+            <input type="text"
+              class="block w-full h-11 pr-5 pl-12 py-2.5 text-base font-normal shadow-xs text-gray-900 border border-gray-300 rounded-full placeholder-gray-400 focus:outline-none"
+              placeholder="Buscar pasante" />
           </div>
-          <input type="text" id="default-search"
-            class="block w-full sm:w-80 h-11 pr-5 pl-12 py-2.5 text-base font-normal shadow-xs text-gray-900 border border-gray-300 rounded-full placeholder-gray-400 focus:outline-none"
-            placeholder="Buscar reporte" />
+
+          <!-- Botón de Filtro -->
+          <button
+            class="flex items-center justify-center w-11 h-11 rounded-full border border-gray-300 bg-white hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2 transition-all duration-300">
+            <Icon name="uil:filter" class="w-5 h-5 text-gray-500" />
+          </button>
         </div>
 
         <div class="overflow-x-auto w-full">
@@ -31,10 +40,6 @@
                   class="p-3 sm:p-5 text-left text-xs sm:text-sm leading-6 font-semibold text-gray-900 capitalize">
                   Industry Type
                 </th>
-                <th scope="col"
-                  class="p-3 sm:p-5 text-left text-xs sm:text-sm leading-6 font-semibold text-gray-900 capitalize rounded-t-xl">
-                  Actions
-                </th>
               </tr>
             </thead>
             <tbody class="divide-y divide-gray-300">
@@ -50,19 +55,6 @@
                 </td>
                 <td class="p-3 sm:p-5 whitespace-nowrap text-xs sm:text-sm leading-6 font-medium text-gray-900">
                   Accessories
-                </td>
-                <td class="p-3 sm:p-5">
-                  <div class="flex items-center gap-2 sm:gap-1">
-                    <button class="p-2 rounded-full group transition-all duration-500 flex items-center">
-                      <Icon name="uil:edit" class="w-4 h-4 sm:w-5 sm:h-5 text-indigo-500" />
-                    </button>
-                    <button class="p-2 rounded-full group transition-all duration-500 flex items-center">
-                      <Icon name="uil:trash-alt" class="w-4 h-4 sm:w-5 sm:h-5 text-red-600" />
-                    </button>
-                    <button class="p-2 rounded-full group transition-all duration-500 flex items-center">
-                      <Icon name="uil:draggabledots" class="w-4 h-4 sm:w-5 sm:h-5 text-black" />
-                    </button>
-                  </div>
                 </td>
               </tr>
             </tbody>
